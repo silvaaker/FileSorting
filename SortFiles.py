@@ -8,13 +8,13 @@ import time
 
 inputDir = input("Enter the directory you want to sort: ") #promting user to enter directory
 
-print('-------------------------------------------------\n Available languages:\n en=English\n sv=Svenska\n-------------------------------------------------')
+print('-------------------------------------------------\n Available languages:\n en=English\n sv=Svenska\n-------------------------------------------------') #list of available languges
 
 folderLanguage = input("In what language do you want the folder names?:") #promting user to enter directory
 
 parent_dir = (inputDir+ '/')
 
-#parent_dir = "C:/users/filip/downloads/PythonTest/" #permanent directory
+#parent_dir = "C:/users/user/downloads/" #permanent directory
 
 
 #directory names SWEDISH --------------------------
@@ -36,7 +36,9 @@ if folderLanguage == 'SV' or folderLanguage == 'sv':
     directoryText = 'Textfiler'
     directoryRemoteDesktop = 'Remote desktop'
     directoryWeb = 'Web-filer'
-    
+
+#directory names ENGLISH --------------------------
+
 elif folderLanguage == 'EN' or folderLanguage == 'en':
     directoryMovies = 'Movies'
     directoryPictures = 'Pictures'
